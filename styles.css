@@ -1,0 +1,234 @@
+/* ANIMATION SECTION */
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(10); }
+    100% { transform: translateY(-15px); }
+}
+@keyframes mover {
+    0% { transform: translateY(10); }
+    100% { transform: translateY(-15px); }
+}
+
+@-webkit-keyframes bounce {
+    0% { transform: translateY(-10); }
+    100% { transform: translateY(-15px); }
+}
+@keyframes bounce {
+    0% { transform: translateY(20); }
+    100% { transform: translateY(-5px); }
+}
+
+  
+
+body{
+    background-image: url("BG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.logo{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 80px;
+    padding-top: 40px;
+    animation: 2s ease-out 0s 1 slideInFromLeft;
+
+}
+
+
+.nav{
+    transition:8s ease-out;
+    position: absolute;
+    float: right;
+}
+
+
+ul{
+    padding-right: 60px;
+    top: -110px;
+    display: inline-flex;
+    float: right;
+    position: relative;
+    list-style-type:none;
+    margin-top: 55px;
+}
+
+li{
+    display: inline-flex;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    height: 20px;
+    float: right;
+    padding: 15px 15px;
+    border-radius: 15px;
+    font-family:sans-serif;
+    color: black;
+    font-size: 16px;
+}
+
+li:hover{
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 3px 10px 3px #b9d6f8;
+    animation: .5s ease-out 0s 1 slideInFromLeft;
+}
+
+
+
+#dashboard{
+    background-color: #449DFF;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#dashboard:hover{
+    background-color: white;
+    color: #449DFF;
+    font-weight: bolder;
+}
+
+#man{
+    margin-top: 50px;
+    margin-left: 130px;
+    animation: 2s ease-out 0s 1 slideInFromLeft,mover 2s infinite  alternate;
+}
+
+#wallet{
+    margin-top: -600px;
+    float: right;
+    margin-right: 800px;
+    animation: 3s ease-out 0s 1 slideInFromLeft, bounce 1s infinite  alternate;
+    transform: rotate(10deg);    
+
+}
+
+#top-title{
+    color:#449DFF;
+    font-size: 100px;
+    font-weight: bolder;
+    margin-top: -600px;
+    margin-left: 900px;
+    font-family: sans-serif;
+}
+
+#top-des{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: -100px;
+    margin-left: 900px;
+    font-family: sans-serif;
+}
+
+.top-button{
+    margin-left: 900px;
+}
+
+.primary{
+    height: 60px;
+    font-size: 20px;
+    width: 230px;
+    border-radius: 10px;
+    color: white;
+    background-color: #449DFF;
+    border: none;
+    animation: 3s ease-out 0s 1 slideInFromLeft;
+
+}
+
+.secondary{
+    height: 60px;
+    font-size: 20px;
+    width: 140px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border: none;
+    margin-left: 10px;
+    animation: 3s ease-out 0s 1 slideInFromLeft;
+}
+
+.secondary:hover{
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.primary:hover{
+    background-color:#1679e3 ;
+    cursor: pointer;
+}
+
+#dec-1{
+    margin-top: -300px;
+    float: right;
+    margin-right: 800px;
+    animation: 3s ease-out 0s 1 slideInFromLeft , mover 2s infinite  alternate;
+    transform: rotate(10deg);    
+}
+
+.dec-2{
+    margin-top: -300px;
+    float: right;
+    margin-right: 1300px;
+    animation: 3s ease-out 0s 1 slideInFromLeft, mover 2s infinite  alternate;
+    transform: rotate(-20deg);    
+    
+}
+
+.dec-3{
+    margin-top: -120px;
+    float: right;
+    margin-right: 1200px;
+    animation: 3s ease-out 0s 1 slideInFromLeft, mover 2s infinite  alternate;
+    transform: rotate(5deg);   
+}
+
+.comments{
+    width:100%;
+    background-color: white;
+    margin-top: 240px;
+}
+
+#comment1{
+    margin-left: 20px;
+    height: 500px;
+    width: 500px;
+
+}
+
+.top-content-sec{
+    margin-top: 30px;
+}
+
+
+.features{
+    display: inline-flex;
+    margin-top: 300px;
+    height: 200px;
+    width: 90%;
+    border-radius: 20px;
+    background-color: white;
+    position: absolute;
+    justify-content: center;
+}
+
+.f1{
+  margin-left: 80px;  
+  margin-top: 50px;
+  padding-bottom: 10px;
+}
+
+.features-header{
+    text-align: center;
+    justify-content: center;
+    display: inline-flex;
+}

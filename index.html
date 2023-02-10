@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- CSS STYLESHEET SECTION -->
+    <link rel="stylesheet" href="font-icons.css">
+    <link rel="stylesheet" href="styles.css" >
+    <link rel="stylesheet" href="popup.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- MATERIAL ICON FONT CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- SCRIPTS SECTION -->
+    <script src="script.js"></script>
+</head>
+<body onload="mainFun()">
+    <!-- ⭐️ TOP -->
+    <div class="top">
+        <div class="menu">
+            <!-- LOGO -->
+            <div class="logo">
+                <img alt="img" src="IMAGES/LOGO.png" height="50px" width="fit">
+            </div>
+            <!-- NAVIGATION -->
+            <nav>
+                <ul>
+                    <li id="home" class="page">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+                        </svg>
+                    HOME</li>
+
+                    <li  id="price" class="page">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
+                            <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/>
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
+                          </svg>
+                        PRICING</li>
+
+                    <li id="features" class="page">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-bar-contract" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M3.646 14.854a.5.5 0 0 0 .708 0L8 11.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708zm0-13.708a.5.5 0 0 1 .708 0L8 4.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708zM1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8z"/>
+                          </svg>
+                          FEATURES</li> &nbsp;&nbsp;&nbsp;
+
+                    <li id="dashboard" class="page">
+                        
+                        SIGNIN</li>
+                </ul>
+            </nav>
+            <!-- TOP IMAGE SECTION -->
+            <div class="top-content-sec">
+            <div class="sec-left">
+                <img alt="top-img" id="man" src="IMAGES/TOP_MAN_IMG.png" height="600px" width="600px">
+                <img alt="top-img" id="wallet" src="IMAGES/ATOM.png" height="150px" width="200px" >
+                <!-- SURROUNDING IMAGES -->
+                <img alt="top-img" class="dec-1" id="dec-1" src="IMAGES/DEC.png" height="100px" width="120px" >
+                <img alt="top-img" class="dec-2"  id="dec-2" src="IMAGES/BOOKS.png" height="100px" width="100px" >
+                <img alt="top-img"  class="dec-3" id="dec-3" src="IMAGES/ROCKET.png" height="150px" width="150px" >
+
+            </div>
+             <!-- TOP TEXT SECTION -->
+            <div>
+                <p id="top-title">Virtual <br> Money</p>
+                <p id="top-des">Future is here !</p>
+                <!-- TOP TEXT SECTION -->
+                <div class="top-button">
+                    <button class="primary">START NOW</button>
+                    <button class="secondary">INFO</button>
+                </div>
+            </div>
+        </div>
+      </div>
+   </div>
+</div>
+
+<!-- ⭐️ FEATURES SECTION -->
+<div class="features">
+    <center> <p class="features-header"> Our Features </p></center>
+    <div class="f1">
+        <img src="IMAGES/9.png" alt="img" height="200px" width="200px">
+    </div>
+    <div class="f1">
+        <img src="IMAGES/10.png" alt="img" height="200px" width="200px">
+    </div>
+    <div class="f1">
+        <img src="IMAGES/11.png" alt="img" height="200px" width="200px">
+    </div>
+    <div class="f1">
+        <img src="IMAGES/8.png" alt="img" height="200px" width="200px">
+    </div>
+</div>
+
+<!-- ⭐️ POP UPS -->
+<!-- PRIMARY BUTTON POPUP-->      
+<div class="custom-model-main">
+    <div class="custom-model-inner">        
+        <div class="close-btn"><img alt="top-img" src="IMAGES/CLOSE.png" height="50px" width="50px"></div>
+        <div class="custom-model-wrap">
+            <div class="pop-up-content-wrap">
+                <img alt="top-img" src="IMAGES/LOADPOPUP.png" height="500px" width="500px">
+            </div>
+        </div>  
+    </div>  
+    <div class="bg-overlay"></div>
+</div> 
+<script>
+    $(window).on('load', function() {
+     $(".custom-model-main").addClass('model-open');
+      }); 
+    $(".close-btn, .bg-overlay").click(function(){
+    $(".custom-model-main").removeClass('model-open');
+     });
+</script>
+
+<!-- SIGNIN BUTTON POPUP -->
+<div class="custom-model-main-1">
+    <div class="custom-model-inner-1">        
+        <div class="close-btn-1"><img alt="top-img" src="IMAGES/CLOSE.png" height="50px" width="50px"></div>
+        <div class="custom-model-wrap-1">
+            <div class="pop-up-content-wrap-1">
+
+                <div class="signin">
+                    <div class="signin-header">
+                        <img class="signin-img" src="IMAGES/ACCOUNT.png" alt="account" height="60" width="60px">
+                        <p class="signin-head-text">SIGN IN</p>
+                        
+                    </div>
+                    <hr id="signin-hr">
+                    <form class="form">
+                        <center><input id="name" placeholder="Name" type="text" required></center>  
+                        <center><input id="email" placeholder="Email Id" type="email" required></center>
+                        <center><button type="submit" class="signin-button">CREATE ACCOUNT</button></center>
+                        <br>
+                        <center><input checked type="checkbox" id="signin-checkbox">  <label id="signin-checkbox-label" for="signin-checkbox">By creating account you are agreeing to our T&C</label></center>
+                    </form>
+                </div>
+                
+            </div>
+        </div>  
+    </div>  
+    <div class="bg-overlay-1"></div>
+</div> 
+<script>
+    // SIGNIN BUTTON CLICK TO POPUP
+    $('#dashboard').on('click', function() {
+     $(".custom-model-main-1").addClass('model-open-1');
+      }); 
+    // PRIMARY BUTTON CLICK TO POPUP 
+    $('.primary').on('click', function() {
+     $(".custom-model-main-1").addClass('model-open-1');
+      }); 
+    //  CLOSING BUTTTON 
+    $(".close-btn-1, .bg-overlay-1").click(function(){
+    $(".custom-model-main-1").removeClass('model-open-1');
+     });
+    
+</script>
+</body>
+</html>
