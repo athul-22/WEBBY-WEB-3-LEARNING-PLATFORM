@@ -211,24 +211,35 @@ li:hover{
 
 
 .features{
-    display: inline-flex;
-    margin-top: 300px;
+    
+    margin-top: 250px;
     height: 200px;
     width: 90%;
     border-radius: 20px;
     background-color: white;
-    position: absolute;
-    justify-content: center;
+   position: absolute
 }
 
 .f1{
   margin-left: 80px;  
-  margin-top: 50px;
+  margin-top: 10px;
   padding-bottom: 10px;
+  
+}
+
+.features-content{
+    justify-content: center;
+    display: inline-flex;
 }
 
 .features-header{
     text-align: center;
-    justify-content: center;
-    display: inline-flex;
+   
 }
+
+h3{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline wavy 3px #439eff;
+}
+

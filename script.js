@@ -26,7 +26,6 @@ function mainFun(){
     else{
         dashboard.innerHTML = "DASHBOARD";
     }
-
 }
 
   function topSignin(){
