@@ -10,28 +10,46 @@ function mainFun(){
     // SIGNIN - DASHBOARD TEXT CHANGE
     if(mainDB == null){
         dashboard.innerHTML = "SIGNIN";
-         // SIGNIN BUTTON CLICK TO POPUP
-    $('#dashboard').on('click', function() {
-        $(".custom-model-main-1").addClass('model-open-1');
-         }); 
-       // PRIMARY BUTTON CLICK TO POPUP 
-       $('.primary').on('click', function() {
-        $(".custom-model-main-1").addClass('model-open-1');
-         }); 
-       //  CLOSING BUTTTON 
-       $(".close-btn-1, .bg-overlay-1").click(function(){
-       $(".custom-model-main-1").removeClass('model-open-1');
-        });
+            // SIGNIN BUTTON CLICK TO POPUP
+            $('#dashboard').on('click', function() {
+            $(".custom-model-main-1").addClass('model-open-1');
+              }); 
+            // PRIMARY BUTTON CLICK TO POPUP 
+             $('.primary').on('click', function() {
+            $(".custom-model-main-1").addClass('model-open-1');
+              }); 
+            //  CLOSING BUTTTON 
+             $(".close-btn-1, .bg-overlay-1").click(function(){
+             $(".custom-model-main-1").removeClass('model-open-1');
+            });
     }
     else{
         dashboard.innerHTML = "DASHBOARD";
-        window.open("dashboard.html")
     }
+
 }
 
-    if(mainDB != null){
+  function topSignin(){
+    var dashboardBtn = document.getElementById("dashboard");
 
+    if(dashboardBtn.innerHTML == "SIGNIN"){
+            // SIGNIN BUTTON CLICK TO POPUP
+            $('#dashboard').on('click', function() {
+            $(".custom-model-main-1").addClass('model-open-1');
+              }); 
+            // PRIMARY BUTTON CLICK TO POPUP 
+             $('.primary').on('click', function() {
+            $(".custom-model-main-1").addClass('model-open-1');
+              }); 
+            //  CLOSING BUTTTON 
+             $(".close-btn-1, .bg-overlay-1").click(function(){
+             $(".custom-model-main-1").removeClass('model-open-1');
+            });
+    }else{
+        window.open("dashboard.html")
     }
+
+  }
 
 // SIGNIN DATA STORE FUNCTION
 
@@ -49,3 +67,4 @@ function storeData(){
     console.log(emailDB);
 
 }
+
