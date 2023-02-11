@@ -139,7 +139,7 @@
     z-index: 99999;
     opacity: 1;
     overflow: hidden;
-    background-color: #00BCD4;
+    background-color: #00bbd400;
   }
   .custom-model-inner {
     -webkit-transform: translate(0, -25%);
@@ -183,9 +183,9 @@
     z-index: 999;
   }
   .model-open .bg-overlay {
-   background: rgba(21, 21, 21, 0.314);
+   background: rgba(0, 0, 0, 0);
    z-index: 99;
-   backdrop-filter: blur(10px);
+   backdrop-filter: blur(15px);
   }
 
   .bg-overlay {
@@ -342,7 +342,7 @@
 
   #home {
     
-    width: 60%;
+    width: 63%;
     margin: auto;
     justify-content: center;
     margin-top: -10px;
@@ -366,11 +366,11 @@
 
   .progress-content-sec{
     margin-top: -230px;
-    display: inline-block;
+    display: inline-flex;
+    margin-left: -180px;
   }
 
   #progress-content{
-    
     border-radius: 20px;
-    margin-left: -160px;
+    padding-left: 10px;
   }
