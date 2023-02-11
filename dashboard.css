@@ -10,7 +10,7 @@
   }
   
   .material-icons {
-    color: #0c0c0c;
+    color: #4a4a4a;
     margin: 10px;
     position: fixed;
   
@@ -30,7 +30,7 @@
   }
   
   .menu-open {
-    left: 230px;
+    left: 200px;
     
   }
   
@@ -38,6 +38,7 @@
     left: 0;
     width: 200px;
     justify-content: center;
+
   }
   
   .menu-side,
@@ -50,7 +51,6 @@
   .menu-side {
     background-color: #ffffff;
     color: rgb(2, 2, 2);
-  
     position: fixed;
     top: 0;
     left: -230px;
@@ -69,16 +69,17 @@
   }
   
   ul {
-    padding-top: 34px;
+    padding-top: 60px;
     margin: 0;
     padding-left: 20%;
   }
   
   ul li {
+    margin-top: 20px;
     list-style: none;
-    margin-bottom: 22px;
+    margin-bottom: 40px;
     font-size: 1.2em;
-    color: rgb(37, 37, 37);
+    color: rgb(75, 75, 75);
     cursor: pointer;
     font-family: sans-serif;
     padding-left: 10px;
@@ -86,12 +87,17 @@
   }
   
   li:hover {
-    border-left: 3px solid #6ba7a1;
+    border-left: 5px solid #2c99ff;
+    color: rgb(0, 0, 0);
+    
+    border-radius: 20px;
+
   }
   
   #content {
     width: 60%;
     margin: auto;
+
   }
   
   
@@ -186,6 +192,7 @@
    z-index: 99;
    backdrop-filter: blur(10px);
   }
+
   .bg-overlay {
     background: rgba(0, 0, 0, 0);
     height: 100vh;
@@ -200,6 +207,7 @@
     -o-transition: background 0.15s linear;
     transition: background 0.15s linear;
   }
+
   .close-btn {
     position: absolute;
     right: 0;
@@ -309,3 +317,25 @@
     margin-top: 100px;
   }
   
+  #name-menu{
+    text-align: center;
+    color: grey;
+    font-size: 17px;
+    font-family: sans-serif;
+    margin-top: -10px;
+  }
+
+  #email-menu{
+    text-align: center;
+    color: black;
+    font-size: 12px;
+    margin-top: -15px;
+    font-family: sans-serif;
+  }
+
+  #menu_hr{
+    color: #eee;
+    height: 1px;
+    width: 80%;
+    border-radius: 20px;
+  }

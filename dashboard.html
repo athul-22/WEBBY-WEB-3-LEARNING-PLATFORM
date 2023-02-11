@@ -12,11 +12,12 @@
         <header>
           <a href="#" class="menu-toggle"><i class="material-icons">menu</i></a>
           <nav class="menu-side">
-            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <img alt="img"  id="profile_img" height="64px" width="64px"><br>
-            <p id="name-menu"></p>
-            <p id="email-menu"></p>
-
+           <br>
+            <p id="name-menu">a</p>
+            <p id="email-menu">a</p>
+            <hr id="menu_hr">
             <ul>
               <li>Home</li>
               <li>Courses</li>
@@ -29,8 +30,8 @@
         </header>
 
         <!-- BODY CONTENT STARTS FROM HERE -->
-
-        <div id="content">
+        <!--HOME SECTION-->
+        <div id="home">
 
         </div>
 
@@ -72,6 +73,13 @@
         $('.menu-toggle').on('click', function() {
         $('body').toggleClass('menu-open');
         });
+
+        //WELCOME POPUP FUNCTION
+
+        $(".close-btn, .bg-overlay").click(function(){
+            localStorage.setItem("loadDB", "OPENED");
+           $(".custom-model-main").removeClass('model-open');
+           });
       </script>
       </body>
 </html>

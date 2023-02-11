@@ -1,11 +1,19 @@
 function dashLoad(){
 
+    var menu_name = document.getElementById("name-menu");
+    var menu_email = document.getElementById("email-menu");
     var load_db = localStorage.getItem("loadDB");
+
+    var name_value = localStorage.getItem("nameDB");
+    var email_value = localStorage.getItem("emailDB");
+
+    menu_name.innerHTML = name_value;
+    menu_email.innerHTML = email_value;
+    
     console.log(load_db);
+
     if(localStorage.getItem("loadDB") != "OPENED"){
         $(".custom-model-main").addClass('model-open');
-
-        
     }else{
 
         console.log("WELCOME POPUP SHOWED");
