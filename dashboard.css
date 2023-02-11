@@ -37,6 +37,7 @@
   .menu-open .menu-side {
     left: 0;
     width: 200px;
+    justify-content: center;
   }
   
   .menu-side,
@@ -231,7 +232,7 @@
   
 
   .welcome-popup-main{
-    height: 400px;
+    height: 500px;
     width: 500px;
     background-color: white;
     display: block;
@@ -239,9 +240,10 @@
   }
 
   .welcome-popup-title{
-    font-size: 17px;
-    margin-top: -10px;
-    color: grey;
+    font-size: 20px;
+    margin-top: 10px;
+    color: rgb(107, 107, 107);
+    font-family: robo-thin;
   }
 
   #welcome-tick{
@@ -255,9 +257,10 @@
   }
 
   #name{
+    margin-top: -20PX;
     text-align: center;
     color: rgb(23, 23, 23);
-    font-size: 30px;
+    font-size: 60px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
   }
@@ -266,6 +269,43 @@
     text-align: center;
     color: rgb(99, 99, 99);
     font-size: 18px;
-    margin-top:-30px ;
+    margin-top:-60px ;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
+  .avathar-title{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    padding-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  #man:hover, #women:hover{
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+
+    border-radius: 20px;
+    box-shadow: 0 3px 10px 3px #d1d1d1;
+
+  }
+
+
+  #man{
+    margin-right: 30px;
+
+  }
+
+  .avathar-images{
+    padding-top: 50px;
+    display: inline;
+    justify-content: center;
+    position: relative;
+
+  }
+
+  .profile_im{
+    margin-top: 100px;
+  }
+  

@@ -12,7 +12,11 @@
         <header>
           <a href="#" class="menu-toggle"><i class="material-icons">menu</i></a>
           <nav class="menu-side">
-            <img alt="img" ><br>
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img alt="img"  class="profile_img" height="64px" width="64px"><br>
+            <p id="name-menu"></p>
+            <p id="email-menu"></p>
+
             <ul>
               <li>Home</li>
               <li>Courses</li>
@@ -39,10 +43,20 @@
                 <div class="pop-up-content-wrap">
                     <div class="welcome-popup-main">
                       <center><img id="welcome-tick" src="/IMAGES/DASHBOARD/TICKMARK.png" alt="tick" height="70px" width="70px"></center>
-                      <p id="name">Accc</p>
-                      <p id="email">cccc</p>
-                      <br><h2 class="welcome-popup-title" style="text-align: center;font-family: Verdana, Geneva, Tahoma, sans-serif;">Account Created Successfully</h2>
+                      
+                      <h2 class="welcome-popup-title" style="text-align: center;font-family: Verdana, Geneva, Tahoma, sans-serif;">WELCOME</h2>
+                      <p id="name"></p>
+                      <p id="email"></p>
+                      
                       <hr id="welcome-hr">
+
+                      <div class="avathar">
+                        <div class="avathar-title">Choose Your Avathar</div><br><br>
+                      </div>
+                      <div class="avathar-images">
+                      <center><img onclick="manFun()" id="man" alt="a" src="IMAGES/DASHBOARD/AVATHAR/MAN_1.png" height="100px" width="100px">
+                      <img onclick="womenFun()" id="women" alt="a" src="IMAGES/DASHBOARD/AVATHAR/WOMEN_1.png" height="100px" width="100px"></center>
+                      </div>
                     </div>
                 </div>
             </div>  
