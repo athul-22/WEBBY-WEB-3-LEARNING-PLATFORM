@@ -1,5 +1,7 @@
 function dashLoad(){
 
+	document.body.style.backgroundColor = '#b9d6f8';
+
     var menu_name = document.getElementById("name-menu");
     var menu_email = document.getElementById("email-menu");
     var load_db = localStorage.getItem("loadDB");
