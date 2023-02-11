@@ -1,18 +1,24 @@
 function dashLoad(){
 
-    var load_db;
+    var load_db = localStorage.getItem("loadDB");
+    console.log(load_db);
+    if(localStorage.getItem("loadDB") != "OPENED"){
+        $(".custom-model-main").addClass('model-open');
 
-    load_db = localStorage.getItem("loadDB")
-
-    if(localStorage.getItem("loadDB") == "null"){
-        $(window).on('load', function() {
-            $(".custom-model-main").addClass('model-open');
-             }); 
-           $(".close-btn, .bg-overlay").click(function(){
-           $(".custom-model-main").removeClass('model-open');
-            });
+        
     }else{
+
         console.log("WELCOME POPUP SHOWED");
+
+        // $(window).on('load', function() {
+        //     $(".custom-model-main").addClass('model-open');
+        //      }); 
+        //    $(".close-btn, .bg-overlay").click(function(){
+        //     localStorage.setItem("loadDB", "OPENED");
+        //    $(".custom-model-main").removeClass('model-open');
+        //     });
+
+        
     }
 
     var name_value = localStorage.getItem("nameDB");
