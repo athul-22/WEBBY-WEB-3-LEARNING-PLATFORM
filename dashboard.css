@@ -351,13 +351,26 @@
   .home_progress{
     background-color: white;
     margin-left: -200px;
-    height: 150px;
+    height: 300px;
     border-radius: 20px;
    
   }
 
   #home_dash_titles{
+    color: #000000;
     margin-left: 40px;
     padding-top: 20px;
+    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .progress-content-sec{
+    margin-top: -230px;
+    display: inline-block;
+  }
+
+  #progress-content{
+    
+    border-radius: 20px;
+    margin-left: -160px;
   }
