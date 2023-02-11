@@ -6,27 +6,63 @@
         <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto" rel="stylesheet">
         <link rel="stylesheet" href="dashboard.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="dashboard.js"></script>
       </head>
-      <body class="menu menu-open">
+      <body class="menu menu-open" onload="dashLoad()">
         <header>
           <a href="#" class="menu-toggle"><i class="material-icons">menu</i></a>
           <nav class="menu-side">
-
+            <img alt="img" ><br>
             <ul>
               <li>Home</li>
-              <li>Portfolio</li>
-              <li>Contact</li>
+              <li>Courses</li>
+              <li>Progress</li>
+              <li>Settings</li>
+              <li>Contact Us</li>
             </ul>
 
           </nav>
         </header>
 
+        <!-- BODY CONTENT STARTS FROM HERE -->
+
         <div id="content">
+
         </div>
-      </body>
+
+      <!-- WELCOME - ACCOUNT CONFIRMATION POPUP   -->
+
+      <div class="custom-model-main">
+        <div class="custom-model-inner">        
+            <div class="close-btn"><img alt="top-img" src="IMAGES/CLOSE.png" height="50px" width="50px"></div>
+            <div class="custom-model-wrap">
+                <div class="pop-up-content-wrap">
+                    <div class="welcome-popup-main">
+                      <center><img id="welcome-tick" src="/IMAGES/DASHBOARD/TICKMARK.png" alt="tick" height="70px" width="70px"></center>
+                      <p id="name">Accc</p>
+                      <p id="email">cccc</p>
+                      <br><h2 class="welcome-popup-title" style="text-align: center;font-family: Verdana, Geneva, Tahoma, sans-serif;">Account Created Successfully</h2>
+                      <hr id="welcome-hr">
+                    </div>
+                </div>
+            </div>  
+        </div>  
+        <div class="bg-overlay"></div>
+    </div> 
+    <script>
+        $(window).on('load', function() {
+         $(".custom-model-main").addClass('model-open');
+          }); 
+        $(".close-btn, .bg-overlay").click(function(){
+        $(".custom-model-main").removeClass('model-open');
+         });
+    </script>
+
+      <!-- SIDEMENU SCRIPT -->
       <script>
         $('.menu-toggle').on('click', function() {
         $('body').toggleClass('menu-open');
-});
-      </script>>
+        });
+      </script>
+      </body>
 </html>
