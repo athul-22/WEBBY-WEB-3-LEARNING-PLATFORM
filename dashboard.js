@@ -1,4 +1,20 @@
 function dashLoad(){
+
+    var load_db;
+
+    load_db = localStorage.getItem("loadDB")
+
+    if(localStorage.getItem("loadDB") == "null"){
+        $(window).on('load', function() {
+            $(".custom-model-main").addClass('model-open');
+             }); 
+           $(".close-btn, .bg-overlay").click(function(){
+           $(".custom-model-main").removeClass('model-open');
+            });
+    }else{
+        console.log("WELCOME POPUP SHOWED");
+    }
+
     var name_value = localStorage.getItem("nameDB");
     var email_value = localStorage.getItem("emailDB");
 
@@ -20,10 +36,10 @@ function dashLoad(){
     console.log(profile_DB);
 
 
-    if(profile_DB == "man"){
-        document.getElementsByClassName("profile_img").src = "MAN_1.png";
+    if(profile_DB == 'man'){
+        document.getElementById("profile_img").src = "MAN_1.png";
     }else{
-        document.getElementsByClassName("profile_img").src = 'WOMEN_1.png';
+        document.getElementById("profile_img").src = 'WOMEN_1.png';
     }
 }
 
