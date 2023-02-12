@@ -2,7 +2,6 @@ function mainFun(){
     //ELEMENTS
     var dashboard = document.getElementById("dashboard");
     var signin_button = document.getElementsByClassName("signin-button");
-
     var mainDB = localStorage.getItem("nameDB");
 
     console.log(mainDB);
@@ -24,8 +23,7 @@ function mainFun(){
             });
     }
     else{
-        dashboard.innerHTML = "DASHBOARD";
-        window.open("dashboard.html");
+        dashboard.innerHTML = "DASHBOARD"; 
     }
 }
 
@@ -61,7 +59,6 @@ function storeData(){
     localStorage.setItem("emailDB", email_value);  
 
     var n = localStorage.getItem("nameDB");
-
 
     console.log(n);
     console.log(emailDB);
