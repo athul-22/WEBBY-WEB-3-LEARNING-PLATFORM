@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="dashboard.css">
         <link rel="stylesheet" href="dashContent.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="videoplayer.css">
         <script src="dashMenu.js"></script>
         <script src="dashboard.js"></script>
       </head>
@@ -173,10 +174,29 @@
       <div class="video-popup">
         <div class="popup-bg"></div>
           <div class="popup-content">
-            <iframe src="https://youtube.com/embed/gQojMIhELvM?autoplay=0" class="video"></iframe>
-            <button class="close-btn">close</button>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UWeNARU12U0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            <button class="close-btn">X</button>
           </div>
       </div>
       
+      <script>
+        $(document).ready(function(){
+         $('.trending-content-img').on('click', function(){
+           $('.video-popup').fadeIn('slow');
+             return false;
+           });
+  
+        $('.popup-bg').on('click', function(){
+          $('.video-popup').slideUp('slow');
+          return false;
+        });
+  
+       $('.close-btn').on('click', function(){
+       $('.video-popup').fadeOut('slow');
+        return false;
+       });
+  
+});
+      </script>
+
       </body>
 </html>
