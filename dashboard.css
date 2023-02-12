@@ -8,15 +8,20 @@
     background-color:#0068df;
   }
   
-  .material-icons {
+  .material-icons{
+    height: 40px;
+    width: 40px;
+  }
+
+  /* .material-icons {
     color: #4a4a4a;
     margin: 10px;
     position: fixed;
   
   }
-  
+   */
   .material-icons:hover {
-    color: #000000;
+    
   }
   
   .menu {
@@ -89,7 +94,7 @@
     border-left: 5px solid #2c99ff;
     color: rgb(0, 0, 0);
     
-    border-radius: 20px;
+    border-radius: 5px;
 
   }
   
@@ -341,17 +346,17 @@
   /* HOME  */
 
   #home {
-    
+  
     width: 63%;
     margin: auto;
     justify-content: center;
-    margin-top: -10px;
+    margin-top: -60px;
   }
   
   .home_progress{
     background-color: white;
     margin-left: -200px;
-    height: 300px;
+    height: 290px;
     border-radius: 20px;
    
   }
@@ -371,6 +376,6 @@
   }
 
   #progress-content{
-    border-radius: 20px;
+    border-radius: 30px;
     padding-left: 10px;
   }
