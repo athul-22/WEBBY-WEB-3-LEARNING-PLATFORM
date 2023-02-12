@@ -226,6 +226,13 @@ li:hover{
 
 .f1{
   padding-left: 60px;
+  cursor: pointer;
+}
+
+.f1:hover{
+    opacity: .5;
+    cursor: pointer;
+    transform: rotate(5deg);
 }
 
 .features-content{

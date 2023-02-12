@@ -95,9 +95,12 @@
     color: rgb(0, 0, 0);
     
     border-radius: 5px;
-
   }
   
+  .pro-menu{
+    color: gold;
+    
+  }
   
   
   h1 {
@@ -412,7 +415,7 @@
   cursor: pointer;
 }
 
-.trending-content-img:hover{
+.trending-content-img-1:hover,.trending-content-img-2:hover,.trending-content-img-3:hover{
   opacity: 0.5;
 }
 

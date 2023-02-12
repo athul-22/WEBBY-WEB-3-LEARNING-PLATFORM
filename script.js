@@ -24,6 +24,7 @@ function mainFun(){
     }
     else{
         dashboard.innerHTML = "DASHBOARD"; 
+        window.open("dashboard.html");
     }
 }
 
@@ -43,10 +44,10 @@ function mainFun(){
              $(".close-btn-1, .bg-overlay-1").click(function(){
              $(".custom-model-main-1").removeClass('model-open-1');
             });
-    }else{
+    }
+    else{
         window.open("dashboard.html");
     }
-
   }
 
 // SIGNIN DATA STORE FUNCTION
