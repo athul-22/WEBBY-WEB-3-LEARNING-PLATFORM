@@ -2,36 +2,43 @@
     <head>
         <meta charset="utf-8">
         <title>Slide Out Side Menu</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto" rel="stylesheet">
         <link rel="stylesheet" href="dashboard.css">
+        <link rel="stylesheet" href="dashMenu.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="dashMenu.js"></script>
         <script src="dashboard.js"></script>
       </head>
       <body class="menu menu-open" onload="dashLoad()">
+
         <header>
+
           <a href="#" class="menu-toggle"><img class="material-icons" src="IMAGES/DASHBOARD/menu.png"></a>
           <!-- <a href="#" class="menu-toggle"><i class="material-icons">menu</i></a> -->
+         
           <nav class="menu-side">
             <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <img alt="img"  id="profile_img" height="64px" width="64px"><br>
-           <br>
+           
+          <br>
+            
             <p id="name-menu">a</p>
             <p id="email-menu">a</p>
             <hr id="menu_hr">
 
             <ul>
-              <li id="active"><img alt="img" src="IMAGES/DASHBOARD/GRID.svg" height="20px" width="20px" ><span>Home</span></li>
-              <li><img alt="img" src="IMAGES/DASHBOARD/BACK.svg" height="20px" width="20px" ><span>Courses</span></li>
-              <li><img alt="img" src="IMAGES/DASHBOARD/EMAIL.svg" height="20px" width="20px" ><span>Contact Us</span>;</li>
+              <li onclick="contentFun()"><img alt="img" src="IMAGES/DASHBOARD/GRID.svg" height="20px" width="20px" ><span>Home</span></li>
+              <li onclick="contentFun()"><img alt="img" src="IMAGES/DASHBOARD/BACK.svg" height="20px" width="20px" ><span>Courses</span></li>
+              <li onclick="contactFun()"><img alt="img" src="IMAGES/DASHBOARD/EMAIL.svg" height="20px" width="20px" ><span>Contact Us</span></li>
               <li><img alt="img" src="IMAGES/DASHBOARD/SETTINGS.svg" height="20px" width="20px" ><span>Settings</span></li>
             </ul>
           </nav>
         </header>
 
         <!-- BODY CONTENT STARTS FROM HERE -->
-
-        <!--HOME SECTION-->
+        <!-- ⭐️ HOME SECTION -->
         <div id="home">
           <div class="home_progress">
             <p id="home_dash_titles">Dashboard</p>
@@ -44,7 +51,7 @@
           </div>
         </div>
 
-        <!-- CONTENT SECTION  -->
+        <!--⭐️ CONTENT SECTION  -->
         <div class="content-main">
           <div class="content-head">
             <div class="filters">
@@ -58,6 +65,18 @@
           <div class="content-content">
             
           </div>
+        </div>
+
+        <!-- CONTACT US SECTION -->
+
+        <div class="contact">
+          <p>dev.athulnambiar@gmail.com</p>
+        </div>
+
+
+        <!-- SETTINGS SECTION -->
+        <div class="settings">
+          <p>settings goes here</p>
         </div>
 
       <!-- WELCOME - ACCOUNT CONFIRMATION POPUP   -->
