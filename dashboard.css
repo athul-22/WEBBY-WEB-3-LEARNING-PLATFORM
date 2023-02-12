@@ -78,11 +78,11 @@
     padding-left: 15%;
   }
   
-  ul li {
+  ul li , ul li span{
     margin-top: 20px;
     list-style: none;
     margin-bottom: 40px;
-    font-size: 1.2em;
+    font-size: 1em;
     color: rgb(75, 75, 75);
     cursor: pointer;
     font-family: sans-serif;
@@ -378,4 +378,8 @@
   #progress-content{
     border-radius: 30px;
     padding-left: 10px;
+  }
+
+  .content-content{
+    
   }
