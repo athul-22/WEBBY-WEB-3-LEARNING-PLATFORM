@@ -53,9 +53,9 @@ function dashLoad(){
 
 
     if(profile_DB == 'man'){
-        document.getElementById("profile_img").src = "MAN_1.png";
+        document.getElementById("profile_img").src = "MAN_1.jpg";
     }else{
-        document.getElementById("profile_img").src = 'WOMEN_1.png';
+        document.getElementById("profile_img").src = 'WOMEN_1.jpg';
     }
 }
 
@@ -65,7 +65,7 @@ function manFun(){
     var man = document.getElementById("man");
     var profileDB = localStorage.setItem("profileDB", "man");
 
-    document.getElementsByClassName("profile_img").src = 'MAN_1.png';
+    document.getElementsByClassName("profile_img").src = 'MAN_1.jpg';
 
 }
 
@@ -74,7 +74,7 @@ function womenFun(){
     var man = document.getElementById("women");
     var profileDB = localStorage.setItem("profileDB", "women")
 
-    document.getElementsByClassName("profile_img").src = 'WOMEN_1.png';
+    document.getElementsByClassName("profile_img").src = 'WOMEN_1.jpg';
 }
 
 

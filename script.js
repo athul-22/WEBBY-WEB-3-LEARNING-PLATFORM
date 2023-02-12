@@ -25,6 +25,7 @@ function mainFun(){
     }
     else{
         dashboard.innerHTML = "DASHBOARD";
+        window.open("dashboard.html");
     }
 }
 
@@ -45,7 +46,7 @@ function mainFun(){
              $(".custom-model-main-1").removeClass('model-open-1');
             });
     }else{
-        window.open("dashboard.html")
+        window.open("dashboard.html");
     }
 
   }
