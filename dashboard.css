@@ -346,26 +346,25 @@
   /* HOME  */
 
   #home {
-  
     width: 63%;
     margin: auto;
     justify-content: center;
-    margin-top: -60px;
+    margin-top: -40px;
   }
   
   .home_progress{
+    /* CSS STYLE FOR EACH SECTION */
     background-color: white;
     margin-left: -200px;
-    height: 290px;
+    height: 240px;
     border-radius: 20px;
-   
+   padding-top: 260px;
   }
 
   #home_dash_titles{
     color: #000000;
     margin-left: 40px;
     padding-top: 20px;
-    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
@@ -376,10 +375,48 @@
   }
 
   #progress-content{
+    cursor: pointer;
     border-radius: 30px;
     padding-left: 10px;
   }
 
+  .trending{
+    background-color: white;
+    margin-left: -200px;
+    height: 340px;
+    border-radius: 20px;
+    margin-top: 30px;
+  }
+
+  .trending-title{
+    color: black;
+    padding-top: 5px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+  }
+
+ 
+
+  .trending-head{
+    padding-top: 20px;
+    padding-left: 20px;
+    display: inline-flex;
+  }
+
+.trending-content-img{
+  height: 250px;
+  width: 250px;
+  margin-left: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.trending-content-img:hover{
+  opacity: 0.5;
+}
 
   /* CONTENT */
 
