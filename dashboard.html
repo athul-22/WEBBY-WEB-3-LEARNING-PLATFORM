@@ -11,11 +11,11 @@
         <script src="dashMenu.js"></script>
         <script src="dashboard.js"></script>
       </head>
-      <body class="menu menu-open" onload="dashLoad()">
+      <body class="menu menu-open" onload="dashLoad(),homeFun()">
 
         <header>
 
-          <a href="#" class="menu-toggle"><img class="material-icons" src="IMAGES/DASHBOARD/menu.png"></a>
+          <a href="#" class="menu-toggle"><img alt="img" class="material-icons" src="IMAGES/DASHBOARD/menu.png"></a>
           <!-- <a href="#" class="menu-toggle"><i class="material-icons">menu</i></a> -->
          
           <nav class="menu-side">
@@ -126,12 +126,38 @@
            $(".custom-model-main").removeClass('model-open');
            });
       </script>
+     
+     // SECTION SWITCHING SCRIPT FOR SIDEMENU BAR
 
       <script>
         function homeFun(){
-          $("#home, .content-main").css("visibility", "hidden");
-          $(".content-main").css("visibility", "hidden");
-}
+          $("#home").css("display", "block");
+          $(".content-main").css("display", "none");
+          $(".contact").css("display", "none");
+          $(".settings").css("display", "none");
+          
+        }
+
+        function contentFun(){
+          $("#home").css("display", "none");
+          $(".content-main").css("display", "block");
+          $(".contact").css("display", "none");
+          $(".settings").css("display", "none");
+        }
+
+        function contactFun(){
+          $("#home").css("display", "none");
+          $(".content-main").css("display", "none");
+          $(".contact").css("display", "block");
+          $(".settings").css("display", "none");
+        }
+
+        function settingsFun(){
+          $("#home").css("display", "none");
+          $(".content-main").css("display", "none");
+          $(".contact").css("display", "none");
+          $(".settings").css("display", "block");
+        }
       </script>  
       </body>
 </html>
