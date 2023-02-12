@@ -1,83 +1,65 @@
-var home = document.getElementById("home");
-var content = document.getElementsByClassName("content-main");
-var contact = document.getElementsByClassName("contact");
-var settings = document.getElementsByClassName("settings");
+// var home = document.getElementById("home");
+// var content = document.getElementsByClassName("content-main");
+// var contact = document.getElementsByClassName("contact");
+// var settings = document.getElementsByClassName("settings");
 
 
-$(contentFun(){
-    $("li").on("click",function() {
-      alert("welome");
-    });
-  });
-
-function contentFun(){
-    alert("clcked");
-
-    //CALLING EACH ELEMENT INTO FUNCTION
-    var home = document.getElementById("home");
-    var content = document.getElementsByClassName("content-main");
-    var contact = document.getElementsByClassName("contact");
-    var settings = document.getElementsByClassName("settings");
+// function homeFun(){
+//     // HIDDEN ELEMENTS
+//     document.getElementsByClassName("content-main").style.visibility = "hidden";
+//     document.getElementsByClassName("contact").style.visibility = "hidden";
+//     document.getElementsByClassName("settings").style.visibility = "hidden";
+//     //VISIBLE ELEMENTS
+//     document.getElementById("home").style.visibility = "visible";
+// }
 
 
 
-    // HIDDEN ELEMENTS
-    
-    content.style.visibility = "hidden";
-    contact.style.visibility = "hidden";
-    settings.style.visibility = "hidden";
+// function contentFun(){
+//     //CALLING EACH ELEMENT INTO FUNCTION
+//     var home = document.getElementById("home");
+//     var content = document.getElementsByClassName("content-main");
+//     var contact = document.getElementsByClassName("contact");
+//     var settings = document.getElementsByClassName("settings");
 
-    //VISIBLE ELEMENTS
-    home.style.visibility = "visible";
-}
-
-
-
-function contentFun(){
-    //CALLING EACH ELEMENT INTO FUNCTION
-    var home = document.getElementById("home");
-    var content = document.getElementsByClassName("content-main");
-    var contact = document.getElementsByClassName("contact");
-    var settings = document.getElementsByClassName("settings");
-
-    // HIDDEN ELEMENTS
+//     // HIDDEN ELEMENTS
     
 
-    //VISIBLE ELEMENTS
-}
+//     //VISIBLE ELEMENTS
+// }
 
 
 
 
-function contactFun(){
-    //CALLING EACH ELEMENT INTO FUNCTION
-    var home = document.getElementById("home");
-    var content = document.getElementsByClassName("content-main");
-    var contact = document.getElementsByClassName("contact");
-    var settings = document.getElementsByClassName("settings");
+// function contactFun(){
+//     //CALLING EACH ELEMENT INTO FUNCTION
+//     var home = document.getElementById("home");
+//     var content = document.getElementsByClassName("content-main");
+//     var contact = document.getElementsByClassName("contact");
+//     var settings = document.getElementsByClassName("settings");
 
-    // HIDDEN ELEMENTS
-    content.style.visibility = "hidden";
-    home.style.visibility = "hidden";
-    settings.style.visibility = "hidden";
+//     // HIDDEN ELEMENTS
+//     content.style.visibility = "hidden";
+//     document.getElementById("home").style.visibility = "hidden";
+//     settings.style.visibility = "hidden";
 
-    //VISIBLE ELEMENTS
-    contact.style.visibility = "hidden";
-}
-
-
+//     //VISIBLE ELEMENTS
+//     contact.style.visibility = "hidden";
+// }
 
 
-function settingsFun(){
-    //CALLING EACH ELEMENT INTO FUNCTION
-    var home = document.getElementById("home");
-    var content = document.getElementsByClassName("content-main");
-    var contact = document.getElementsByClassName("contact");
-    var settings = document.getElementsByClassName("settings");
 
-    // HIDDEN ELEMENTS
+
+// function settingsFun(){
+//     //CALLING EACH ELEMENT INTO FUNCTION
+//     var home = document.getElementById("home");
+//     var content = document.getElementsByClassName("content-main");
+//     var contact = document.getElementsByClassName("contact");
+//     var settings = document.getElementsByClassName("settings");
+
+//     // HIDDEN ELEMENTS
     
 
-    //VISIBLE ELEMENTS
-}
+//     //VISIBLE ELEMENTS
+// }
 

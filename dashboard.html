@@ -20,7 +20,7 @@
          
           <nav class="menu-side">
             <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <img alt="img"  id="profile_img" height="64px" width="64px"><br>
+            <img  alt="img"  id="profile_img" height="64px" width="64px"><br>
            
           <br>
             
@@ -29,10 +29,10 @@
             <hr id="menu_hr">
 
             <ul>
-              <li onclick="contentFun()"><img alt="img" src="IMAGES/DASHBOARD/GRID.svg" height="20px" width="20px" ><span>Home</span></li>
+              <li onclick="homeFun()"><img alt="img" src="IMAGES/DASHBOARD/GRID.svg" height="20px" width="20px" ><span>Home</span></li>
               <li onclick="contentFun()"><img alt="img" src="IMAGES/DASHBOARD/BACK.svg" height="20px" width="20px" ><span>Courses</span></li>
               <li onclick="contactFun()"><img alt="img" src="IMAGES/DASHBOARD/EMAIL.svg" height="20px" width="20px" ><span>Contact Us</span></li>
-              <li><img alt="img" src="IMAGES/DASHBOARD/SETTINGS.svg" height="20px" width="20px" ><span>Settings</span></li>
+              <li onclick="settingsFun()"><img alt="img" src="IMAGES/DASHBOARD/SETTINGS.svg" height="20px" width="20px" ><span>Settings</span></li>
             </ul>
           </nav>
         </header>
@@ -53,12 +53,13 @@
 
         <!--⭐️ CONTENT SECTION  -->
         <div class="content-main">
+          <span> WEB3 </span>
+          <span> CRYPTO </span>
+          <span> AR / VR </span>
+          <span> 3D PRINTING </span>
           <div class="content-head">
-            <div class="filters">
-              <span> WEB3 </span>
-              <span> CRYPTO </span>
-              <span> AR / VR </span>
-              <span> 3D PRINTING </span>
+            <div class="filter">
+             
 
             </div>
           </div>
@@ -125,5 +126,12 @@
            $(".custom-model-main").removeClass('model-open');
            });
       </script>
+
+      <script>
+        function homeFun(){
+          $("#home, .content-main").css("visibility", "hidden");
+          $(".content-main").css("visibility", "hidden");
+}
+      </script>  
       </body>
 </html>
