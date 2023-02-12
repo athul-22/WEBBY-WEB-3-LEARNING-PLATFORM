@@ -403,7 +403,7 @@
     display: inline-flex;
   }
 
-.trending-content-img{
+.trending-content-img-1,.trending-content-img-2,.trending-content-img-3{
   height: 250px;
   width: 250px;
   margin-left: 20px;

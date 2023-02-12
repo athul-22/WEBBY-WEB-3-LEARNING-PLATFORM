@@ -55,9 +55,9 @@
               <div class="trending-title">TRENDING</div>
             </div>
             <div class="trending-content">
-              <img class="trending-content-img" src="IMAGES/DASHBOARD/THUMBNAIL/TRENDING/4.png">
-              <img class="trending-content-img" src="IMAGES/DASHBOARD/THUMBNAIL/TRENDING/5.png">
-              <img class="trending-content-img" src="IMAGES/DASHBOARD/THUMBNAIL/TRENDING/6.png">
+              <img class="trending-content-img-1" src="IMAGES/DASHBOARD/THUMBNAIL/TRENDING/4.png">
+              <img class="trending-content-img-2" src="IMAGES/DASHBOARD/THUMBNAIL/TRENDING/5.png">
+              <img class="trending-content-img-3" src="IMAGES/DASHBOARD/THUMBNAIL/TRENDING/6.png">
             </div>
           </div>
 
@@ -72,6 +72,14 @@
               <div id="filter-text"> AR / VR </div>
               <div id="filter-text"> 3D PRINTING </div>
             </div>
+
+            <!-- TRENDING CONTENT -->
+            <div class="trending-content">
+              <img class="trending-content-img-1" src="IMAGES/DASHBOARD/THUMBNAIL/TRENDING/4.png">
+              <img class="trending-content-img-2" src="IMAGES/DASHBOARD/THUMBNAIL/TRENDING/5.png">
+              <img class="trending-content-img-3" src="IMAGES/DASHBOARD/THUMBNAIL/TRENDING/6.png">
+            </div>
+
           </div>
           <div class="content-content">
             
@@ -170,32 +178,97 @@
         }
       </script>
       
-      <!-- VIDEO PLAYER SECTION -->
+      <!-- VIDEO PLAYER SECTION
       <div class="video-popup">
         <div class="popup-bg"></div>
           <div class="popup-content">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/UWeNARU12U0?controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            <button class="close-btn">X</button>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OEJGQD1OuKA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>          </div>
+      </div> -->
+
+
+      <!-- FIRST VIDEO -->
+      <div class="video-popup-1">
+        <div class="popup-bg-1"></div>
+          <div class="popup-content-1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OEJGQD1OuKA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>          </div>
+            <button class="close-btn"> X </button>
+          </div>
+      </div>
+
+      <!-- SECOND VIDEO -->
+      <div class="video-popup-2">
+        <div class="popup-bg-2"></div>
+          <div class="popup-content-2">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0F3uFeqFOOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>      </div>
+            <button class="close-btn"> X </button>
+          </div>
+      </div>
+      <!-- THRID VIDEO -->
+      <div class="video-popup-3">
+        <div class="popup-bg-3"></div>
+          <div class="popup-content-3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-Hbu2nKVJR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>      
+            <button class="close-btn"> X </button>
           </div>
       </div>
       
       <script>
+        //FIRST TRENDING VIDEO
         $(document).ready(function(){
-         $('.trending-content-img').on('click', function(){
-           $('.video-popup').fadeIn('slow');
+         $('.trending-content-img-1').on('click', function(){
+           $('.video-popup-1').fadeIn('slow');
              return false;
            });
   
-        $('.popup-bg').on('click', function(){
-          $('.video-popup').slideUp('slow');
+        $('.popup-bg-1').on('click', function(){
+          $('.video-popup-1').slideUp('slow');
           return false;
         });
   
        $('.close-btn').on('click', function(){
-       $('.video-popup').fadeOut('slow');
+       $('.video-popup-1').fadeOut('slow');
         return false;
        });
+      });
+
+      //SECOND TRENDING VIDEO
+
+      $(document).ready(function(){
+         $('.trending-content-img-2').on('click', function(){
+           $('.video-popup-2').fadeIn('slow');
+             return false;
+           });
   
-});
+        $('.popup-bg-2').on('click', function(){
+          $('.video-popup-2').slideUp('slow');
+          return false;
+        });
+  
+       $('.close-btn').on('click', function(){
+       $('.video-popup-2').fadeOut('slow');
+        return false;
+       });
+      });
+
+      // THIRD IMAGE VIDEO
+
+      $(document).ready(function(){
+         $('.trending-content-img-3').on('click', function(){
+           $('.video-popup-3').fadeIn('slow');
+             return false;
+           });
+  
+        $('.popup-bg-3').on('click', function(){
+          $('.video-popup-3').slideUp('slow');
+          return false;
+        });
+  
+       $('.close-btn').on('click', function(){
+       $('.video-popup-3').fadeOut('slow');
+        return false;
+       });
+      });
+
       </script>
 
       </body>
