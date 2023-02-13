@@ -42,11 +42,11 @@ function dashLoad(){
     var profile_DB = localStorage.getItem("profileDB");
 
     //SETTINGS DATA
-    var set_name = document.getElementById("settings_name");
-    var set_email = document.getElementById("settings_email");
+    var set_name = document.getElementsByClassName("settings_name").innerHTML = name_value;
+    var set_email = document.getElementsByClassName("settings_email").innerHTML = email_value;;
 
-    set_name.innerHTML = name_value;
-    set_email.innerHTML = email_value;
+    $(".settings_name").html(name_value);
+    $(".settings_email").html(email_value);
 
     console.log(localStorage.getItem("profileDB"));
     console.log(profile_DB);
