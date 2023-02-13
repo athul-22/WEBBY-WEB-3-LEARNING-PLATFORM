@@ -127,8 +127,19 @@
 </div> 
 <script>
     $(window).on('load', function() {
-     $(".custom-model-main").addClass('model-open');
-      }); 
+
+       var popupDB = localStorage.getItem('welcomePOPUP');
+       console.log(popupDB);
+
+       if(popupDB == null){
+        $(".custom-model-main").addClass('model-open');
+        localStorage.setItem('welcomePOPUP','popedup');
+        console.log("SETD")
+       }
+       else{
+        console.log("POPEDUP")
+       }
+    }); 
     $(".close-btn, .bg-overlay").click(function(){
     $(".custom-model-main").removeClass('model-open');
      });

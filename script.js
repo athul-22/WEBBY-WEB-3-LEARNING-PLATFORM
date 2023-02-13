@@ -70,6 +70,5 @@ function storeData(){
 
     console.log(n);
     console.log(emailDB);
-
 }
 
