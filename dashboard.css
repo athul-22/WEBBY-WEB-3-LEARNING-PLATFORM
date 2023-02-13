@@ -348,6 +348,12 @@
 
   /* HOME  */
 
+  .user_welcome_text{
+    color: grey;
+    font-size: 25px;
+    padding-top: -200px;
+  }
+
   #home {
     width: 63%;
     margin: auto;
@@ -359,7 +365,7 @@
     /* CSS STYLE FOR EACH SECTION */
     background-color: white;
     margin-left: -200px;
-    height: 240px;
+    height: 200px;
     border-radius: 20px;
    padding-top: 260px;
   }
