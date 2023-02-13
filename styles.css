@@ -264,3 +264,55 @@ h3{
     
 }
 
+
+/* EMAIL SUB STYLES */
+
+.email_sub{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-color: white;
+    height: 200px;
+    width: 95%;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.email{
+    margin-top: px;
+    height: 50px;
+    width: 400px;
+    font-size: 18px;
+    border: none;
+    box-shadow: 0 3px 10px 3px #b9d6f8;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px; 
+}
+
+.email:focus{
+    border: none;
+    outline: none;
+}
+
+.email-btn{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    background-color: #1679e3;
+    color: white;
+    height: 55px;
+    font-family: 20px;
+    width: 100px;
+    font-family: 18px;
+    box-shadow: 0 3px 10px 3px #b9d6f8;
+
+}
+
+.email[placeholder]{
+    padding-left: 10px;
+}
+
+.email-btn:hover{
+    background-color: #0b5db6;
+    cursor: pointer;
+}
+
