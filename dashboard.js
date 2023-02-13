@@ -5,6 +5,7 @@ function dashLoad(){
     var menu_name = document.getElementById("name-menu");
     var menu_email = document.getElementById("email-menu");
     var load_db = localStorage.getItem("loadDB");
+    var closeBtn = document.getElementById;
 
     var name_value = localStorage.getItem("nameDB");
     var email_value = localStorage.getItem("emailDB");
@@ -17,7 +18,6 @@ function dashLoad(){
     if(localStorage.getItem("loadDB") != "OPENED"){
         $(".custom-model-main").addClass('model-open');
     }else{
-
         console.log("WELCOME POPUP SHOWED");
 
         // $(window).on('load', function() {
@@ -61,13 +61,19 @@ function dashLoad(){
 
 
 function manFun(){
-    document.getElementsByClassName("profile_img").src = 'MAN_1.jpg';
+    
+    document.getElementById("profile_img").src = 'MAN_1.jpg';
+
 }
 
 function womenFun(){
-    
+   
+    document.getElementById("profile_img").src = 'WOMEN_1.jpg';
+}
 
-    document.getElementsByClassName("profile_img").src = 'WOMEN_1.jpg';
+
+function popupDB(){
+    localStorage.setItem("loadDB","OPENED");
 }
 
 

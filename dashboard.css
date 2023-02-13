@@ -93,8 +93,7 @@
   li:hover {
     border-left: 5px solid #2c99ff;
     color: rgb(0, 0, 0);
-    
-    border-radius: 5px;
+    border-radius: 2px;
   }
   
   .pro-menu{
@@ -389,6 +388,10 @@
     padding-left: 10px;
   }
 
+  #progress-content:hover{
+    opacity: .5;
+  }
+
   .trending{
     background-color: white;
     margin-left: -200px;
@@ -429,12 +432,12 @@
 /* PRO CONTENT */
 
 .pro-content-main{
-    background-color: white;
-    margin-left: -200px;
-    height: 340px;
-    border-radius: 20px;
-    margin-top: 30px;
-  }
+  background-color: white;
+  margin-left: -200px;
+  height: 340px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
 
   .pro-content-head{
     color: black;
@@ -442,23 +445,19 @@
     font-size: 18px;
     color: rgb(0, 0, 0);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-  }
-
-  .pro-content-head{
     padding-top: 20px;
     padding-left: 20px;
     display: inline-flex;
   }
 
 .pro-content-img-1,.pro-content-img-2,.pro-content-img-3{
-  height: 250px;
-  width: 400px;
+  height: 200px;
+  width: 350px;
   margin-left: 20px;
   border-radius: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
   cursor: pointer;
-  opacity: 0.5;
+  opacity: .5;
 }
 
 .pro-content-img-1:hover,.pro-content-img-2:hover,.pro-content-img-3:hover{
@@ -472,7 +471,9 @@
 .free-content-main{
     background-color: white;
     margin-left: -200px;
-    height: 290px;
+    height: auto;
+    padding:20px 20px 20px 20px;
+    width: %;
     border-radius: 20px;
     margin-top: 30px;
     
@@ -488,16 +489,15 @@
   }
 
   .free-content{
-    scroll-behavior: auto;
     padding-top: 10px;
-    padding-left: 20px;
-    display: inline-flex;
+    
+    display: inline-block;
   }
 
 .free-content-img-1,.free-content-img-2,.free-content-img-3{
-  height: 200px;
-  width: 350px;
-  margin-left: 20px;
+  height: 180px;
+  width: 330px;
+  margin-left: 10px;
   border-radius: 20px;
   margin-top: 10px;
   cursor: pointer;
@@ -637,3 +637,39 @@
   margin-top: 20px;
   font-size: 20px;
 }
+
+
+
+.content-main{
+  width: 63%;
+    margin: auto;
+    justify-content: center;
+    margin-top: -40px;
+}
+
+#filter-text{
+  margin-top: 50px;
+  background-color: black;
+  color: white;
+  height: 35px;
+  width: 130px;
+  text-align: center;
+  padding-top: 8px;
+  border-radius: 15px;
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+#filter-text:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+
+.filter{
+  display: inline-flex;
+  margin-left: -10px;
+  margin-top: 20px;
+}
+

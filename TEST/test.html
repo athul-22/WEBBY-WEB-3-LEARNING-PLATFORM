@@ -1,17 +1,5 @@
-}); 
-
-
-$(window).on('load', function() {
-
-  var popupDB = localStorage.getItem('welcomePOPUP');
-  console.log(popupDB);
-
-  if(popupDB == null){
-   $(".custom-model-main").addClass('model-open');
-  }else{
-   console.log("ALREADY POPED UP ")
-  }  
-$(".close-btn, .bg-overlay").click(function(){
-$(".custom-model-main").removeClass('model-open');
-});
-</script>
+if(profile_DB == 'man'){
+  document.getElementById("profile_img").src = "MAN_1.jpg";
+}else{
+  document.getElementById("profile_img").src = 'WOMEN_1.jpg';
+}

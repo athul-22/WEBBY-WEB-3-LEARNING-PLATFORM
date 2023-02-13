@@ -8,7 +8,6 @@ function mainFun(){
 
     // SIGNIN - DASHBOARD TEXT CHANGE
     if(mainDB == null){
-
         dashboard.innerHTML = "SIGNIN";
         $(".primary").html("SIGN IN");
 
@@ -28,6 +27,7 @@ function mainFun(){
     }
     else{
         dashboard.innerHTML = "DASHBOARD"; 
+        window.open("dashboard.html");
         $('.primary').on('click', function(){
           window.open("dashboard.html");
         });
