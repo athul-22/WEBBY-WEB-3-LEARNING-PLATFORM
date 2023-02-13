@@ -1,12 +1,43 @@
 <html>
     <head>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script>
         
+        function homeFun(){
+          $("#home").css("display", "block");
+          $(".content-main").css("display", "none");
+          $(".contact").css("display", "none");
+          $(".settings").css("display", "none");
+          
+        }
+
+        function contentFun(){
+          $("#home").css("display", "none");
+          $(".content-main").css("display", "block");
+          $(".contact").css("display", "none");
+          $(".settings").css("display", "none");
+        }
+
+        function contactFun(){
+          $("#home").css("display", "none");
+          $(".content-main").css("display", "none");
+          $(".contact").css("display", "block");
+          $(".settings").css("display", "none");
+        }
+
+        function settingsFun(){
+          $("#home").css("display", "none");
+          $(".content-main").css("display", "none");
+          $(".contact").css("display", "none");
+          $(".settings").css("display", "block");
+        }
+        
+      </script>
         <meta charset="utf-8">
         <title>Slide Out Side Menu</title>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <link rel="stylesheet" href="dashboard.css">
         <link rel="stylesheet" href="dashContent.css">
         
@@ -183,7 +214,7 @@
               <img onclick="proLock()" alt=""  class="pro-content-img-2" src="IMAGES/DASHBOARD/THUMBNAIL/PRO/PEEO-2.jpg">
             </div>
           </div>
-        </div>
+      </div>
 
             <!--⭐️ CONTENT SECTION  -->
 
@@ -202,11 +233,31 @@
                   <img class="trending-content-img-2" src="IMAGES/DASHBOARD/THUMBNAIL/TRENDING/5.jpg">
                   <img class="trending-content-img-3" src="IMAGES/DASHBOARD/THUMBNAIL/TRENDING/6.jpg">
                 </div>
+              </div>
+              <div class="free-content-main">
+                <div class="trending-head">
+                  <img id="fire" src="IMAGES/DASHBOARD/STAR.jpg" alt="" height="35px" width="30px"> &nbsp;
+                  <div class="trending-title">FREE TRIAL</div>
+                </div>
+                <div class="free-content">
+                  <img alt="" class="free-content-img-1" src="IMAGES/DASHBOARD/THUMBNAIL/FREE/FREE-1.jpg">
+                  <img alt=""  class="free-content-img-2" src="IMAGES/DASHBOARD/THUMBNAIL/FREE/FREE-2.jpg">
+                  <img alt=""  class="free-content-img-2" src="IMAGES/DASHBOARD/THUMBNAIL/FREE/FREE3.jpg">
+                </div>
+              </div>
+               <!-- PRO CONTENT -->
     
+               <div class="pro-content-main">
+                <div class="pro-content-head">
+                  <img id="crown" src="IMAGES/DASHBOARD/STAR.jpg" alt="" height="35px" width="30px"> &nbsp;
+                  <div class="trending-title">PREMIUM</div>
+                </div>
+                <div class="pro-content">
+                  <img onclick="proLock()" alt="" class="pro-content-img-1" src="IMAGES/DASHBOARD/THUMBNAIL/PRO/PRO-1.jpg">
+                  <img onclick="proLock()" alt=""  class="pro-content-img-2" src="IMAGES/DASHBOARD/THUMBNAIL/PRO/PEEO-2.jpg">
+                </div>
               </div>
-              <div class="content-content">
-                
-              </div>
+
             </div>
     
             <!-- ⭐️ CONTACT US SECTION -->
@@ -236,9 +287,11 @@
             </div>
     
     
-            <!-- SETTINGS SECTION -->
+            <!-- ⭐️ SETTINGS SECTION -->
             <div class="settings">
-              <p>settings goes here</p>
+              <img  alt="img"  id="settings_img" height="64px" width="64px"><br>
+              <p class="settings_name"></p>
+              <p class="settings_email"></p>
             </div>
     
          
