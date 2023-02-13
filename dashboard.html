@@ -12,6 +12,12 @@
         <script src="dashMenu.js"></script>
         <script src="dashboard.js"></script>
 
+        <!-- SWEET ALERT -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js
+        "></script>
+        <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.min.css
+        "rel="stylesheet">
+
         <style>
           ::-webkit-scrollbar {
     width: 20px;
@@ -129,15 +135,42 @@
               <div class="trending-title">TRENDING</div>
             </div>
             <div class="trending-content">
-              <img class="trending-content-img-1" src="IMAGES/DASHBOARD/THUMBNAIL/TRENDING/4.jpg">
-              <img class="trending-content-img-2" src="IMAGES/DASHBOARD/THUMBNAIL/TRENDING/5.jpg">
-              <img class="trending-content-img-3" src="IMAGES/DASHBOARD/THUMBNAIL/TRENDING/6.jpg">
+              <img alt="" class="trending-content-img-1" src="IMAGES/DASHBOARD/THUMBNAIL/TRENDING/4.jpg">
+              <img alt="" class="trending-content-img-2" src="IMAGES/DASHBOARD/THUMBNAIL/TRENDING/5.jpg">
+              <img alt="" class="trending-content-img-3" src="IMAGES/DASHBOARD/THUMBNAIL/TRENDING/6.jpg">
             </div>
           </div>
 
+          <!-- PRO CONTENT -->
+          <div class="pro-content-main">
+            <div class="pro-content-head">
+              <img id="crown" src="IMAGES/DASHBOARD/STAR.jpg" alt="" height="35px" width="30px"> &nbsp;
+              <div class="trending-title">PREMIUM</div>
+            </div>
+            <div class="pro-content">
+              <img onclick="proLock()" alt="" class="pro-content-img-1" src="IMAGES/DASHBOARD/THUMBNAIL/PRO/PRO-1.jpg">
+              <img onclick="proLock()" alt=""  class="pro-content-img-2" src="IMAGES/DASHBOARD/THUMBNAIL/PRO/PEEO-2.jpg">
+            </div>
+          </div>
+
+          <!-- FREE CONTENT -->
+
+          <div class="free-content-main">
+            <div class="trending-head">
+              <img id="fire" src="IMAGES/DASHBOARD/STAR.jpg" alt="" height="35px" width="30px"> &nbsp;
+              <div class="trending-title">FREE TRIAL</div>
+            </div>
+            <div class="free-content">
+              <img alt="" class="free-content-img-1" src="IMAGES/DASHBOARD/THUMBNAIL/FREE/FREE-1.jpg">
+              <img alt=""  class="free-content-img-2" src="IMAGES/DASHBOARD/THUMBNAIL/FREE/FREE-2.jpg">
+              <img alt=""  class="free-content-img-2" src="IMAGES/DASHBOARD/THUMBNAIL/FREE/FREE3.jpg">
+
+            </div>
+          </div>
         </div>
 
         <!--⭐️ CONTENT SECTION  -->
+
         <div class="content-main">
           <div class="content-head">
             <div class="filter">
@@ -203,6 +236,19 @@
     </div> 
     <script>
        
+    </script>
+
+    <!-- PREMIUM CONTENT LOCKED  -->
+
+    <script>
+      function proLock(){
+        Swal.fire({
+        title: 'ERROR',
+        text: 'Get Preium Plan to continue',
+        icon: 'error',
+        confirmButtonText: 'Close'
+        })
+      }
     </script>
 
       <!-- SIDEMENU SCRIPT -->
@@ -328,6 +374,62 @@
 
       $(document).ready(function(){
          $('.trending-content-img-3').on('click', function(){
+           $('.video-popup-3').fadeIn('slow');
+             return false;
+           });
+  
+        $('.popup-bg-3').on('click', function(){
+          $('.video-popup-3').slideUp('slow');
+          return false;
+        });
+  
+       $('.close-btn').on('click', function(){
+       $('.video-popup-3').fadeOut('slow');
+        return false;
+       });
+      });
+
+      //FREE VIDEO CONTENT JQUERY
+      $(document).ready(function(){
+         $('.free-content-img-1').on('click', function(){
+           $('.video-popup-1').fadeIn('slow');
+             return false;
+           });
+  
+        $('.popup-bg-1').on('click', function(){
+          $('.video-popup-1').slideUp('slow');
+          return false;
+        });
+  
+       $('.close-btn').on('click', function(){
+       $('.video-popup-1').fadeOut('slow');
+        return false;
+       });
+      });
+
+      //SECOND TRENDING VIDEO
+
+      $(document).ready(function(){
+         $('.free-content-img-2').on('click', function(){
+           $('.video-popup-2').fadeIn('slow');
+             return false;
+           });
+  
+        $('.popup-bg-2').on('click', function(){
+          $('.video-popup-2').slideUp('slow');
+          return false;
+        });
+  
+       $('.close-btn').on('click', function(){
+       $('.video-popup-2').fadeOut('slow');
+        return false;
+       });
+      });
+
+      // THIRD IMAGE VIDEO
+
+      $(document).ready(function(){
+         $('.free-content-img-3').on('click', function(){
            $('.video-popup-3').fadeIn('slow');
              return false;
            });

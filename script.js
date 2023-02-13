@@ -24,7 +24,7 @@ function mainFun(){
     }
     else{
         dashboard.innerHTML = "DASHBOARD"; 
-        window.open("dashboard.html");
+        //window.open("dashboard.html");
     }
 }
 
