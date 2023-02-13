@@ -641,10 +641,12 @@
 
 
 .content-main{
+
   width: 63%;
-    margin: auto;
-    justify-content: center;
-    margin-top: -40px;
+  margin: auto;
+
+  justify-content: center;
+  
 }
 
 #filter-text{
@@ -673,3 +675,7 @@
   margin-top: 20px;
 }
 
+.content-head{
+  margin-top: -105px;
+  margin-left: -210px;
+}

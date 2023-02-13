@@ -1,5 +1,10 @@
 function dashLoad(){
 
+        $("#home").css("display", "block");
+        $(".content-main").css("display", "none");
+        $(".contact").css("display", "none");
+        $(".settings").css("display", "none");
+    
 	document.body.style.backgroundColor = '#b9d6f8';
 
     var menu_name = document.getElementById("name-menu");
@@ -18,17 +23,7 @@ function dashLoad(){
     if(localStorage.getItem("loadDB") != "OPENED"){
         $(".custom-model-main").addClass('model-open');
     }else{
-        console.log("WELCOME POPUP SHOWED");
-
-        // $(window).on('load', function() {
-        //     $(".custom-model-main").addClass('model-open');
-        //      }); 
-        //    $(".close-btn, .bg-overlay").click(function(){
-        //     localStorage.setItem("loadDB", "OPENED");
-        //    $(".custom-model-main").removeClass('model-open');
-        //     });
-
-        
+        console.log("WELCOME POPUP SHOWED");        
     }
 
     var name_value = localStorage.getItem("nameDB");
@@ -44,9 +39,14 @@ function dashLoad(){
     console.log(email_value);
 
     // GETTING PROFILE LOCALSTORAGE
-
- 
     var profile_DB = localStorage.getItem("profileDB");
+
+    //SETTINGS DATA
+    var set_name = document.getElementById("settings_name");
+    var set_email = document.getElementById("settings_email");
+
+    set_name.innerHTML = name_value;
+    set_email.innerHTML = email_value;
 
     console.log(localStorage.getItem("profileDB"));
     console.log(profile_DB);
@@ -54,9 +54,13 @@ function dashLoad(){
 
     if(profile_DB == 'man'){
         document.getElementById("profile_img").src = "MAN_1.jpg";
+        document.getElementById("settings_img").src = "MAN_1.jpg";
     }else{
         document.getElementById("profile_img").src = 'WOMEN_1.jpg';
+        document.getElementById("settings_img").src = 'WOMEN_1.jpg';
     }
+
+
 }
 
 
