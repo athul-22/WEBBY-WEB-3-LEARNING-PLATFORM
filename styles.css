@@ -116,7 +116,7 @@ li:hover{
     font-size: 80px;
     font-weight: bolder;
     margin-top: -600px;
-    margin-left: 900px;
+    margin-left: 800px;
     font-family: sans-serif;
 }
 
@@ -125,12 +125,12 @@ li:hover{
     font-size: 30px;
     font-weight: bolder;
     margin-top: -80px;
-    margin-left: 900px;
+    margin-left: 800px;
     font-family: sans-serif;
 }
 
 .top-button{
-    margin-left: 900px;
+    margin-left: 800px;
 }
 
 .primary{
@@ -315,4 +315,6 @@ h3{
     background-color: #0b5db6;
     cursor: pointer;
 }
+
+/* ⭐️ MOBILE RESPONSIE CSS */
 
