@@ -263,6 +263,7 @@
                       <center><img onclick="manFun()" id="man" alt="a" src="IMAGES/DASHBOARD/AVATHAR/MAN_1.jpg" height="100px" width="100px">
                       <img onclick="womenFun()" id="women" alt="a" src="IMAGES/DASHBOARD/AVATHAR/WOMEN_1.jpg" height="100px" width="100px"></center>
                       </div>
+                    <center> <button onclick="" class="welcome-popup-close"> DONE </button></center> 
                     </div>
                 </div>
             </div>  
@@ -301,11 +302,18 @@
         $('body').toggleClass('menu-open');
         });
 
+
+        //button close
+        $(".welcome-popup-close").on('click', function(){
+          $(".custom-model-main").removeClass('model-open');
+        })
+
         //WELCOME POPUP FUNCTION
 
         $(".close-btn, .bg-overlay").click(function(){
             localStorage.setItem("loadDB", "OPENED");
            $(".custom-model-main").removeClass('model-open');
+           
            });
       </script>
      

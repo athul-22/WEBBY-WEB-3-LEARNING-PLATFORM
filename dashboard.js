@@ -61,18 +61,11 @@ function dashLoad(){
 
 
 function manFun(){
-    var profile_img = document.getElementById("profile_img");
-    var man = document.getElementById("man");
-    var profileDB = localStorage.setItem("profileDB", "man");
-
     document.getElementsByClassName("profile_img").src = 'MAN_1.jpg';
-
 }
 
 function womenFun(){
-    var profile_img = document.getElementById("profile_img");
-    var man = document.getElementById("women");
-    var profileDB = localStorage.setItem("profileDB", "women")
+    
 
     document.getElementsByClassName("profile_img").src = 'WOMEN_1.jpg';
 }
