@@ -1,0 +1,54 @@
+body{
+    background-color: #eee;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+#free-pdf-title{
+    margin-left: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline wavy 2px grey;
+    text-underline-offset: 5px;
+}
+
+.free-pdf{
+    height: 70px;
+    width: 80%;
+    margin: auto;
+    display: ;
+    justify-content: center;
+    background-color: white;
+}
+
+.free-pdf{
+    cursor: pointer;
+    margin-left: 30px;
+    padding-top: 20px;
+    height: 120px;
+    width: 120px;
+    vertical-align: center;
+    border-radius: 10px;
+}
+
+.free-pdf:hover{
+    box-shadow: 0 3px 10px 3px #cccccc;
+}
+
+#pdf-name{
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+
+.free_1{
+    display: inline-flex;
+}
