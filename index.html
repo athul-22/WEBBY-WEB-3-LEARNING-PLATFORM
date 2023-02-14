@@ -129,10 +129,8 @@
 </div> 
 <script>
     $(window).on('load', function() {
-
        var popupDB = localStorage.getItem('welcomePOPUP');
        console.log(popupDB);
-
        if(popupDB == null){
         $(".custom-model-main").addClass('model-open');
         localStorage.setItem('welcomePOPUP','popedup');
@@ -169,7 +167,6 @@
                         <center><input checked type="checkbox" id="signin-checkbox">  <label id="signin-checkbox-label" for="signin-checkbox">By creating account you are agreeing to our T&C</label></center>
                     </form>
                 </div>
-                
             </div>
         </div>  
     </div>  
